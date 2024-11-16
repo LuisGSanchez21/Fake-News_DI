@@ -1,0 +1,40 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Visor de Articulos</title>
+        <link rel="stylesheet" href="html.css">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="popover-container">
+                <button popovertarget="popover-menu" id="anchor_1" class="bton-menu" anchor-name="--anchor_1">≡</button>
+                <ul id="popover-menu" popover>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="sports.html">Sport</a></li>
+                    <li><a href="finance.html">Finance</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                    <li><a href="entertainment.html">Entertainment</a></li>
+                </ul>
+            </div>
+        </header>
+        <template id="article-template">
+            <div class="article-container">
+                <h3 class="headline"></h3>
+                <p><strong>Author:</strong> <span class="author"></span></p>
+                <p class="section"></p>
+            </div>
+        </template>
+
+
+        <news-viewer id="news-grid" section="World News"></news-viewer>
+
+        <script src="news-viewer.js"></script>
+
+    </body>
+
+    </html>

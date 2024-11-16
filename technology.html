@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visor de Noticias Falsas</title>
+    <link rel="stylesheet" href="html.css">
+</head>
+
+<body>
+    <header>
+        <div class="popover-container">
+            <button popovertarget="popover-menu" id="anchor_1" class="bton-menu" anchor-name="--anchor_1">≡</button>
+                <ul id="popover-menu" popover>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="sports.html">Sport</a></li>
+                    <li><a href="finance.html">Finance</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                    <li><a href="entertainment.html">Entertainment</a></li>
+                </ul>
+        </div>
+    </header>
+    <h1>Artículos de Noticias Falsas</h1>
+    <!-- Componente personalizado -->
+
+    <news-viewer section="technology"></news-viewer>
+
+
+
+    <template id="article-template">
+        <div class="container">
+          <a class="url" href="article.html">
+            <div class="article">
+              <h3 class="title"></h3></a>
+              <p class="description"></p>
+              <div id="down-section">
+                <p><strong>Author:</strong> <span class="author"></span></p>
+              </div>
+            </div>
+          
+        </div>
+      </template>
+      
+
+    <script src="news-viewer.js"></script>
+
+</body>
+
+</html>

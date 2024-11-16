@@ -1,0 +1,67 @@
+/*
+Css de el popover y el anc
+*/
+.popover-container{
+    position: relative;
+    display: inline-block;  
+}
+.popover-trigger{
+    padding: 10px 20px;
+    display: flex;
+}
+#anchor_1{
+    anchor-name: --anchor_1;
+}
+
+#popover-menu{
+    width: 200px;
+    height: 400px;
+}
+
+[popover]{
+    position: absolute;
+    position-anchor: --anchor_1;
+    top: anchor(--anchor_1 top);
+    left: anchor(--anchor_1 right);
+    margin: 0;
+}
+/*
+Otros elementos
+*/
+
+.bton-menu{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: none;
+    width: 50px;
+    height: auto;
+    font-size: large;
+}
+ul{
+    list-style: none;
+}
+li{
+    padding-bottom: 50px;
+    font-size: x-large;
+    text-align: justify;
+}
+
+
+/*
+grid de pantalla normal (fs)
+*/
+news-viewer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+
+.grid-item{
+    padding: 20px;
+}
+
+
+/*
+
+*/
+
+
